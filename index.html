@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Fetch API Practice</h1>
+        <div>
+            <p>How to Use:</p>
+            <p>This functional webpage has two buttons. The first is to return a list of 5 individuals from an API Fetch request using a FOR LOOP. Select the "Loop Request" button to get started with it.</p>
+            <p>The second button is a bulk API fetch request. It's interactive as you can specific the number of results you wish to return by inputting a value in the text field below.</p>
+            <p>Let's get started!</p>
+        </div>
+    </header>
+
+    <section>
+        <p>Click either button to perform the FETCH request.</p>
+        <div> 
+            <label for="word">Enter a specific number of returned results you wish to see for the Bulk Request. (Max of 5000)</label> 
+            <input type="number" name="number" id="number"  placeholder="How many do you wish to return? (Max of 5000)" onkeyup="bulkPostValue(this)"> 
+        </div>
+        <button onclick="getPosts()">Loop Request</button>
+        <button onclick="getBulkPosts()">Bulk Request</button>
+        <!-- <button onclick="populateDisplay()">Show Bulk Results</button> -->
+        <p id="demo"></p>
+    </section>
+
+    <section>
+        <ol class="populateAPIFetch">
+        <!-- LIs will go here -->
+        </ol>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>
